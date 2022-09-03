@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+}
+a{
+    color: white;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header{
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header nav .logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 40px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 30px;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+.menu-btn{
+    color: #0ba2c0;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all 0.5s ease-in-out;
+    
+}
+.menu ul li a:hover{
+    color: #0ba2c0;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+.menu-btn:hover{
+    color: white;
+    background-color: #0ba2c0;
+}
+header nav .logo:hover{
+    background-color: #0ba2c0;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Section Start */
+.content{
+    color: white;
+    height: calc(100vh-100px);
+    padding-top: 100px;
+}
+.content h1{
+    font-size: 60px;
+    text-align: center;
+}
+.content p{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 35px;
+}
+.content .links{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    column-gap: 20px;
+}
+.content .links a{
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 60px;
+    transition: all 0.5s ease-in-out;
+}
+.content .links a:hover{
+    background-color: #0ba2c0;
+    color: white;
+}
+/* Section End*/
+
+
+/*Reposnsive Start*/
+@media (max-width:570px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .menu-btn{
+        display: none;
+    }
+    .menu ul{
+        column-gap: 20px;
+    }
+    .content{
+        padding-top:50px;
+    }
+    .content h1{
+        font-size: 30px;
+    }
+    .content p{
+        font-size: 20px;
+    }
+    .container .logo a{
+        font-size: 25px;
+    }
+    .content .links{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .content .links a{
+        padding: 10px;
+        font-size: 15px;
+        width: 90%;
+
+    }
+}
+
+/*Reposnsive End*/
